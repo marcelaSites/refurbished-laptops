@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our collection of quality refurbished laptops in Ireland. Affordable laptops with warranty for students, professionals and small businesses.">
+    <meta name="keywords" content="refurbished laptops Ireland, used laptops Dublin, buy cheap laptops Ireland, refurbished laptops Cork, laptops with warranty Ireland">
+    <title>Shop Refurbished Laptops - RefurbishedLaptops.ie</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Refurbished<span>Laptops</span>.ie</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
+    
+    <!-- Catalog Section -->
+    <section class="catalog-section">
+        <div class="container">
+            <h1 class="section-title">Shop Refurbished Laptops</h1>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <form id="filterForm">
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label for="brandFilter" class="filter-label">Brand</label>
+                            <select id="brandFilter" class="filter-select">
+                                <option value="all">All Brands</option>
+                                <option value="dell">Dell</option>
+                                <option value="hp">HP</option>
+                                <option value="lenovo">Lenovo</option>
+                                <option value="apple">Apple</option>
+                                <option value="asus">Asus</option>
+                                <option value="acer">Acer</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="processorFilter" class="filter-label">Processor</label>
+                            <select id="processorFilter" class="filter-select">
+                                <option value="all">All Processors</option>
+                                <option value="i3">Intel Core i3</option>
+                                <option value="i5">Intel Core i5</option>
+                                <option value="i7">Intel Core i7</option>
+                                <option value="m1">Apple M1</option>
+                                <option value="ryzen">AMD Ryzen</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="ramFilter" class="filter-label">RAM</label>
+                            <select id="ramFilter" class="filter-select">
+                                <option value="all">All RAM</option>
+                                <option value="4">4GB</option>
+                                <option value="8">8GB</option>
+                                <option value="16">16GB</option>
+                                <option value="32">32GB</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label class="filter-label">Price Range (€)</label>
+                            <div class="price-range">
+                                <div class="price-input">
+                                    <input type="number" id="priceMin" class="form-control" placeholder="Min" min="0">
+                                </div>
+                                <div class="price-input">
+                                    <input type="number" id="priceMax" class="form-control" placeholder="Max" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <label for="storageFilter" class="filter-label">Storage</label>
+                            <select id="storageFilter" class="filter-select">
+                                <option value="all">All Storage</option>
+                                <option value="128">128GB SSD</option>
+                                <option value="256">256GB SSD</option>
+                                <option value="512">512GB SSD</option>
+                                <option value="1000">1TB SSD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-actions">
+                        <button type="button" id="resetFilters" class="btn btn-reset">Reset</button>
+                        <button type="submit" class="btn btn-filter">Apply Filters</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-brand="dell" data-price="399" data-processor="i5" data-ram="8" data-storage="256">
+                    <div class="product-img">
+                        <img src="images/dell-latitude.jpg" alt="Dell Latitude Refurbished Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Dell Latitude 7420</h3>
+                        <p class="product-specs">Intel i5, 8GB RAM, 256GB SSD, Windows 11</p>
+                        <p class="product-price">€399</p>
+                        <div class="product-actions">
+                            <a href="product.html?id=dell-latitude-7420" class="btn">View Details</a>
+                            <a href="https://wa.me/+353123456789?text=I'm%20interested%20in%20the%20Dell%20Latitude%207420" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-brand="hp" data-price="349" data-processor="i5" data-ram="16" data-storage="512">
+                    <div class="product-img">
+                        <img src="images/hp-elitebook.jpg" alt="HP EliteBook Refurbished Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">HP EliteBook 840</h3>
+                        <p class="product-specs">Intel i5, 16GB RAM, 512GB SSD, Windows 11</p>
+                        <p class="product-price">€349</p>
+                        <div class="product-actions">
+                            <a href="product.html?id=hp-elitebook-840" class="btn">View Details</a>
+                            <a href="https://wa.me/+353123456789?text=I'm%20interested%20in%20the%20HP%20EliteBook%20840" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-brand="lenovo" data-price="429" data-processor="i7" data-ram="16" data-storage="512">
+                    <div class="product-img">
+                        <img src="images/lenovo-thinkpad.jpg" alt="Lenovo ThinkPad Refurbished Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Lenovo ThinkPad X1</h3>
+                        <p class="product-specs">Intel i7, 16GB RAM, 512GB SSD, Windows 11</p>
+                        <p class="product-price">€429</p>
+                        <div class="product-actions">
+                            <a href="product.html?id=lenovo-thinkpad-x1" class="btn">View Details</a>
+                            <a href="https://wa.me/+353123456789?text=I'm%20interested%20in%20the%20Lenovo%20ThinkPad%20X1" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-brand="apple" data-price="599" data-processor="m1" data-ram="8" data-storage="256">
+                    <div class="product-img">
+                        <img src="images/macbook-air.jpg" alt="Apple MacBook Air Refurbished Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Apple MacBook Air</h3>
+                        <p class="product-specs">M1 Chip, 8GB RAM, 256GB SSD, macOS</p>
+                        <p class="product-price">€599</p>
+                        <div class="product-actions">
+                            <a href="product.html?id=apple-macbook-air" class="btn">View Details</a>
+                            <a href="https://wa.me/+353123456789?text=I'm%20interested%20in%20the%20Apple%20MacBook%20Air" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-brand="dell" data-price="299" data-processor="i3" data-ram="8" data-storage="256">
+                    <div class="product-img">
+                        <img src="images/dell-inspiron.jpg" alt="Dell Inspiron Refurbished Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Dell Inspiron 15</h3>
+                        <p class="product-specs">Intel i3, 8GB RAM, 256GB SSD, Windows 11</p>
+                        <p class="product-price">€299</p>
+                        <div class="product-actions">
+                            <a href="product.html?id=dell-inspiron-15" class="btn">View Details</a>
+                            <a href="https://wa.me/+353833061255?text=I'm%20interested%20in%20the%20Dell%20Inspiron%2015" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-brand="asus" data-price="379" data-processor="i5" data-ram="8" data-storage="512">
+                    <div class="product-img">
+                        <img src="images/asus-zenbook.jpg" alt="Asus ZenBook Refurbished Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Asus ZenBook 14</h3>
+                        <p class="product-specs">Intel i5, 8GB RAM, 512GB SSD, Windows 11</p>
+                        <p class="product-price">€379</p>
+                        <div class="product-actions">
+                            <a href="product.html?id=asus-zenbook-14" class="btn">View Details</a>
+                            <a href="https://wa.me/+353123456789?text=I'm%20interested%20in%20the%20Asus%20ZenBook%2014" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card" data-brand="hp" data-price="329" data-processor="i5" data-ram="8" data-storage="256">
+                    <div class="product-img">
+                        <img src="images/hp-probook.jpg" alt="HP ProBook Refurbished Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">HP ProBook 450</h3>
+                        <p class="product-specs">Intel i5, 8GB RAM, 256GB SSD, Windows 11</p>
+                        <p class="product-price">€329</p>
+                        <div class="product-actions">
+                            <a href="product.html?id=hp-probook-450" class="btn">View Details</a>
+                            <a href="https://wa.me/+353123456789?text=I'm%20interested%20in%20the%20HP%20ProBook%20450" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card" data-brand="acer" data-price="279" data-processor="i3" data-ram="4" data-storage="128">
+                    <div class="product-img">
+                        <img src="images/acer-aspire.jpg" alt="Acer Aspire Refurbished Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Acer Aspire 3</h3>
+                        <p class="product-specs">Intel i3, 4GB RAM, 128GB SSD, Windows 11</p>
+                        <p class="product-price">€279</p>
+                        <div class="product-actions">
+                            <a href="product.html?id=acer-aspire-3" class="btn">View Details</a>
+                            <a href="https://wa.me/+353123456789?text=I'm%20interested%20in%20the%20Acer%20Aspire%203" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>RefurbishedLaptops.ie</h3>
+                    <p>Your trusted source for quality refurbished laptops in Ireland. We provide affordable computing solutions for students, professionals, and small businesses.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="policies.html">Policies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p>Drogueda, Ireland</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p>+353 83 306 1255</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p>welcomecontacthere@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2025 RefurbishedLaptops.ie. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+353833061255" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
